@@ -1,0 +1,117 @@
+/*Resets*/
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section,figure { 
+	margin: 0; 
+	padding: 0;
+	border: 0
+}
+
+ul,ol{
+    list-style: none
+}
+
+/*o width dos elementos agora será a soma do conteúdo com a borda e o padding.*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+/*Fim resets*/
+
+/*Clear fix, Importante para ajudar nos problemas com float
+https://css-tricks.com/snippets/css/clear-fix/
+*/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/*Fim clearfix*/
+
+/*Estilo geral**/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #4E342E;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header,.cardapio,body{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.content{
+    padding-top: 4.3em;
+    width: 100%;
+}
+
+/*Imagens flexíveis*/
+img{
+    max-width: 100%
+}
+
+/*.cardapio,
+#humburgers,#coffe{
+    display: none
+}*/
+
+#humburgers,#coffe{
+    display: none
+}
+
+.label-opcoes:first-child{
+    background-color: #424242;
+}
+
+.label-opcoes{
+    float: left;
+    width: 50%;
+    background-color: #212121;
+    padding: 1em;
+    font-size: 1.30em
+}
+
+.selecionado{
+    border-bottom: 2px solid red
+}
+
+.items{
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.50em;
+    position: relative
+}
+
+.items span{
+    padding: 0.50em;
+    text-transform: uppercase
+}
+
+.items-descricao{
+    font-size: 0.85em;
+    display: block;
+    width: 70%
+}
+
+.items-preco{
+    position:absolute;
+    right: 0;
+    top: 0
+}
+
+/*Fim estilo geral**/

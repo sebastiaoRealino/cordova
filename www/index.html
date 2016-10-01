@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Humburgers&Cafés</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <label class="label-opcoes selecionado" id="label-humburger" for="humburgers">Burger</label>
+                <input type="radio" id="humburgers" name="opcao" checked class="opcoes">
+                
+                <label class="label-opcoes" id="label-coffe" for="coffe">Coffee</label>
+                <input type="radio" id="coffe" name="opcao" class="opcoes">
+            </nav>
+        </header>
+        <section class="content">
+            <ul class="cardapio"></ul>
+        </section>
+
+        <script type="text/javascript" src="cordova.js"></script><!--ESTE É ARQUIVO DO CORDOVA NÃO REMOVA DAQUI-->
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script> <!-- IMPORTE BIBLIOTECA JQUERY -->
+        <script type="text/javascript" src="js/index.js"></script><!-- UTILIZADO PARA INICIALIZAÇÃO DA APP -->
+        <script type="text/javascript" src="js/app.js"></script> <!-- IMPLEMENTAÇÃO DAS PARTICULARIDADES DA APP-->
+        
+    </body>
+</html>
