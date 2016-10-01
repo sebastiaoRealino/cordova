@@ -65,11 +65,7 @@ img{
     max-width: 100%
 }
 
-/*.cardapio,
-#humburgers,#coffe{
-    display: none
-}*/
-
+.cardapio,
 #humburgers,#coffe{
     display: none
 }
@@ -88,30 +84,6 @@ img{
 
 .selecionado{
     border-bottom: 2px solid red
-}
-
-.items{
-    text-align: left;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 0.50em;
-    position: relative
-}
-
-.items span{
-    padding: 0.50em;
-    text-transform: uppercase
-}
-
-.items-descricao{
-    font-size: 0.85em;
-    display: block;
-    width: 70%
-}
-
-.items-preco{
-    position:absolute;
-    right: 0;
-    top: 0
 }
 
 /*Fim estilo geral**/
