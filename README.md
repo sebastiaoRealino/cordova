@@ -1,2 +1,2 @@
 # cordova
-Exemplo App Cordova e Ajax
+Exemplos Cordova
