@@ -1,0 +1,125 @@
+/*Resets*/
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section,figure { 
+	margin: 0; 
+	padding: 0;
+	border: 0
+}
+
+ul,ol{
+    list-style: none
+}
+
+/*o width dos elementos agora será a soma do conteúdo com a borda e o padding.*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+/*Fim resets*/
+
+/*Clear fix, Importante para ajudar nos problemas com float
+https://css-tricks.com/snippets/css/clear-fix/
+*/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/*Fim clearfix*/
+
+/*Estilo geral**/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #4E342E;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header,body{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.content{
+    padding-top: 1.3em;
+    width: 100%;
+}
+
+/*Imagens flexíveis*/
+img{
+    max-width: 100%
+}
+
+.button{
+    background-color: #617B5E;
+}
+
+#todoList{
+    margin: 1em
+}
+
+#todoList li{
+    text-align: left
+}
+
+.input{
+    width: 90%;  
+    margin-left: 10px;  
+    margin-right: 10px;
+    padding: 1em
+}
+
+.button{
+    border-radius: 4px;  
+    color: #fff;  
+    padding: 2px 40px;  
+    height: 40px;  
+    margin-top: 18px;  
+    opacity: 0.9;  
+    margin-bottom: 20px;    
+    background: #B22222;  
+    display: inline-block;  
+    border: none;  
+    border-bottom: 1px solid #500707;  
+    border-right: 1px solid #500707;
+    width: 30%
+}
+
+.titulo, .data{
+    padding: 1em
+}
+
+.titulo{
+    font-size: 1.2em;
+    color: white;
+}
+
+.data{
+    font-size: 0.60em;
+    color: #B2BFDA;
+    position: absolute;
+    right: 0
+}
+
+.pronto{
+    font-style: italic;
+    opacity:0.6;
+    font-weight: bold
+}
+
+/*Fim estilo geral*/
